@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./js/support.js"></script>
+<script src="./js/project-reveal.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SaaS 後台管理系統重構 — YENWEN</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&amp;family=Noto+Sans+TC:wght@400;500;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style/base.css">
+<link rel="stylesheet" href="./style/project.css">
+</helmet>
+
+<div class="page-project">
+
+  <header class="site-header">
+    <a class="site-logo" href="./index.html">
+      <span class="site-logo-text">YENWEN</span>
+      <span class="site-logo-dot"></span>
+    </a>
+    <a class="site-index" href="./index.html">Index</a>
+  </header>
+
+  <div class="case-layout">
+
+    <aside class="case-aside" aria-label="專案資訊">
+      <p class="case-kicker"><span>02</span> Project</p>
+      <h1 class="case-title">SaaS 後台管理系統重構</h1>
+      <dl class="case-meta">
+        <div>
+          <dt>Role</dt>
+          <dd>UI/UX 設計／參與後台重構<br>負責共用樣式流程與<br>TinyMCE 功能設計、實作</dd>
+        </div>
+        <div>
+          <dt>Type</dt>
+          <dd>企業後台／內容管理系統</dd>
+        </div>
+        <div>
+          <dt>Duration</dt>
+          <dd>約六個月</dd>
+        </div>
+        <div>
+          <dt>Technologies</dt>
+          <dd>
+            <ul class="case-tags">
+              <li>Ruby on Rails 7</li>
+              <li>Vite</li>
+              <li>SCSS</li>
+              <li>TinyMCE</li>
+              <li>Figma</li>
+            </ul>
+          </dd>
+        </div>
+      </dl>
+    </aside>
+
+    <main class="case-main">
+
+      <section class="case-section" aria-labelledby="overview-title">
+        <h2 id="overview-title">Overview</h2>
+        <p>我參與公司的 SaaS 後台管理系統重構與 UI/UX 設計，將原本依賴外購版型的後台改為團隊可自行維護與擴充的系統，並參與 Rails 7 和 Vite 的升級。</p>
+        <p>我設計並實作共用樣式編譯流程，也親自設計與實作 TinyMCE 的內容模板、跳出容器和刪除模板功能。完成後，這套架構成為公司後續客製化新專案的共用基底。</p>
+        <figure class="case-figure">
+          <img class="case-image" src="./img/project2-main.jpg" alt="SaaS 後台管理介面的概念示意，展示文章列表與內容編輯面板。">
+          <figcaption>後台管理介面示意圖。</figcaption>
+        </figure>
+      </section>
+
+      <section class="case-section" aria-labelledby="problem-title">
+        <h2 id="problem-title">專案問題</h2>
+        <ul class="case-list">
+          <li>外購後台版型不易客製，樣式與結構難以維護。</li>
+          <li>富文本編輯器中的排版與網站前台呈現不一致，需要額外調整樣式。</li>
+          <li>舊有 CKEditor、Select2 等工具在相容性或操作上有問題。</li>
+          <li>新專案重複處理後台和編輯器樣式，難以累積共用做法。</li>
+        </ul>
+      </section>
+
+      <section class="case-section" aria-labelledby="goal-title">
+        <h2 id="goal-title">專案目標</h2>
+        <ul class="case-list">
+          <li>建立團隊能自行維護與客製的後台基礎。</li>
+          <li>讓編輯器和前台的樣式呈現更一致。</li>
+          <li>提供不需撰寫程式碼即可使用的內容模板與編輯輔助。</li>
+          <li>將可共用的架構整理成後續新專案的開案基底。</li>
+        </ul>
+      </section>
+
+      <section class="case-section" aria-labelledby="work-title">
+        <h2 id="work-title">我的參與與實作</h2>
+        <h3>參與後台重構與工具鏈升級</h3>
+        <p>我參與將後台改為團隊自行維護的版型，並參與升級至 Rails 7、以 Vite 取代 Webpack。</p>
+        <h3>設計並實作共用樣式流程</h3>
+        <p>我設計並實作以同一套 SCSS 維護前台內容樣式的流程，再由 Vite 編譯出 TinyMCE 使用的 CSS，讓編輯器盡量按照前台樣式呈現。</p>
+        <figure class="case-figure">
+          <div class="case-flow" role="img" aria-label="共用內容樣式以 SCSS 維護，經 Vite 編譯後分別提供前台 CSS 與 TinyMCE 編輯器 CSS。">
+            <div class="case-flow-step"><span>共用內容樣式</span><strong>SCSS</strong></div>
+            <span class="case-flow-arrow" aria-hidden="true">→</span>
+            <div class="case-flow-step"><span>建置與編譯</span><strong>Vite</strong></div>
+            <span class="case-flow-arrow" aria-hidden="true">→</span>
+            <div class="case-flow-output">
+              <div class="case-flow-step"><span>網站前台</span><strong>CSS</strong></div>
+              <div class="case-flow-step"><span>編輯器</span><strong>TinyMCE CSS</strong></div>
+            </div>
+          </div>
+          <figcaption>共用 SCSS 經 Vite 編譯，分別提供網站前台與 TinyMCE 編輯器使用。</figcaption>
+        </figure>
+        <h3>設計並實作 TinyMCE 編輯功能</h3>
+        <p>我親自設計並實作常用內容模板、跳出複雜容器，以及移除內容模板的操作。</p>
+        <ul class="case-list">
+          <li>常用內容模板。</li>
+          <li>跳出複雜容器的操作。</li>
+          <li>移除內容模板的操作。</li>
+        </ul>
+        <p>另外也設計並實作多主題切換、字體大小調整，以及自訂頭像上傳裁切等後台個人化功能。</p>
+        <figure class="case-figure">
+          <img class="case-image case-image-editor" src="./img/project2-editor-crop.jpg" alt="TinyMCE 編輯器工具列，包含刪除模板、跳出區塊容器、建立與解除段落區塊等自訂功能。">
+          <figcaption>編輯器工具列中的自訂功能：刪除模板、跳出區塊容器，以及建立或解除段落區塊。</figcaption>
+        </figure>
+      </section>
+
+      <section class="case-section" aria-labelledby="result-title">
+        <h2 id="result-title">成果</h2>
+        <ul class="case-list">
+          <li>自 2025 年起，公司新客製化專案以這套後台基底開發。</li>
+          <li>共用 SCSS、Vite 與 TinyMCE 的樣式流程，以及可重用的編輯器功能，成為後續專案基底的一部分。</li>
+        </ul>
+      </section>
+
+      <nav class="case-next" aria-label="下一篇">
+        <a class="case-next-link" href="./project-03.html">
+          <span class="case-next-kicker">Next</span>
+          <span class="case-next-title">大型多語系企業官網重設計</span>
+        </a>
+      </nav>
+
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-meta">
+      <span>© 2026 YENWEN</span>
+      <div class="footer-links">
+        <a href="#" hidden="hidden">LinkedIn</a>
+        <a href="mailto:serena8329@gmail.com">Mail</a>
+      </div>
+    </div>
+    <div class="footer-brand-wrap">
+      <div class="footer-brand">YENWEN<span class="footer-brand-dot"></span></div>
+    </div>
+  </footer>
+
+</div>
+</x-dc>
+</body>
+</html>

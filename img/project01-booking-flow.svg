@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" role="img" aria-labelledby="title desc">
+  <title id="title">預約建立與後勤確認流程</title>
+  <desc id="desc">預約從前台自行填寫或由後勤人員代為建立開始，經需求確認與資源安排，最後在預約及必要派車確認後通知申請者。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#2458b8"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="400" rx="22" fill="#f4f6fa"/>
+  <text x="42" y="54" fill="#17263f" font-family="Microsoft JhengHei, Noto Sans TC, sans-serif" font-size="22" font-weight="700">預約建立與後勤確認</text>
+  <text x="42" y="82" fill="#65738a" font-family="Microsoft JhengHei, Noto Sans TC, sans-serif" font-size="14">預約入口依專案階段調整，送出後由後勤人員接續確認與調度</text>
+
+  <g font-family="Microsoft JhengHei, Noto Sans TC, sans-serif">
+    <g>
+      <rect x="32" y="122" width="250" height="166" rx="16" fill="#fff" stroke="#d8e0ec"/>
+      <circle cx="62" cy="153" r="16" fill="#f9a52b"/>
+      <text x="62" y="158" text-anchor="middle" fill="#fff" font-size="13" font-weight="700">01</text>
+      <text x="54" y="196" fill="#17263f" font-size="21" font-weight="700">建立預約</text>
+      <text x="54" y="230" fill="#526078" font-size="14">前台自行填寫；重啟後</text>
+      <text x="54" y="253" fill="#526078" font-size="14">以後台代為預約為主</text>
+    </g>
+    <path d="M288 205H310" stroke="#2458b8" stroke-width="3" marker-end="url(#arrow)"/>
+    <g>
+      <rect x="322" y="122" width="250" height="166" rx="16" fill="#fff" stroke="#d8e0ec"/>
+      <circle cx="352" cy="153" r="16" fill="#f9a52b"/>
+      <text x="352" y="158" text-anchor="middle" fill="#fff" font-size="13" font-weight="700">02</text>
+      <text x="344" y="196" fill="#17263f" font-size="21" font-weight="700">確認需求</text>
+      <text x="344" y="230" fill="#526078" font-size="14">檢視預約內容、服務類型</text>
+      <text x="344" y="253" fill="#526078" font-size="14">與相關規則</text>
+    </g>
+    <path d="M578 205H600" stroke="#2458b8" stroke-width="3" marker-end="url(#arrow)"/>
+    <g>
+      <rect x="612" y="122" width="250" height="166" rx="16" fill="#fff" stroke="#d8e0ec"/>
+      <circle cx="642" cy="153" r="16" fill="#f9a52b"/>
+      <text x="642" y="158" text-anchor="middle" fill="#fff" font-size="13" font-weight="700">03</text>
+      <text x="634" y="196" fill="#17263f" font-size="21" font-weight="700">安排服務</text>
+      <text x="634" y="230" fill="#526078" font-size="14">確認時間與地點；需要時</text>
+      <text x="634" y="253" fill="#526078" font-size="14">安排相關派車</text>
+    </g>
+    <path d="M868 205H890" stroke="#2458b8" stroke-width="3" marker-end="url(#arrow)"/>
+    <g>
+      <rect x="902" y="122" width="266" height="166" rx="16" fill="#fff" stroke="#d8e0ec"/>
+      <circle cx="932" cy="153" r="16" fill="#f9a52b"/>
+      <text x="932" y="158" text-anchor="middle" fill="#fff" font-size="13" font-weight="700">04</text>
+      <text x="924" y="196" fill="#17263f" font-size="21" font-weight="700">確認與通知</text>
+      <text x="924" y="230" fill="#526078" font-size="14">預約與必要派車確認後</text>
+      <text x="924" y="253" fill="#526078" font-size="14">寄送 Email／LINE 通知</text>
+    </g>
+  </g>
+  <rect x="32" y="316" width="1136" height="48" rx="12" fill="#e7edf7"/>
+  <text x="54" y="346" fill="#42516b" font-family="Microsoft JhengHei, Noto Sans TC, sans-serif" font-size="14">系統狀態：預約「審核中 → 已確認」；派車「待確認 → 已確認」</text>
+</svg>

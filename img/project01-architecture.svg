@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
+  <title id="title">系統架構簡化示意</title>
+  <desc id="desc">Vue 前台與 Rails 管理後台連接 Rails 系統，系統提供 Grape API、業務邏輯及 LINE 登入與通知整合，並使用 PostgreSQL 儲存資料。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#2458b8"/>
+    </marker>
+    <marker id="arrowBoth" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10Z" fill="#8492a8"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="560" rx="22" fill="#f4f6fa"/>
+  <text x="44" y="58" fill="#17263f" font-family="Microsoft JhengHei, Noto Sans TC, sans-serif" font-size="22" font-weight="700">系統架構簡化示意</text>
+  <text x="44" y="86" fill="#65738a" font-family="Microsoft JhengHei, Noto Sans TC, sans-serif" font-size="14">呈現主要應用元件與服務關係，不包含實際部署、網址或內部設定</text>
+
+  <g font-family="Microsoft JhengHei, Noto Sans TC, sans-serif">
+    <rect x="54" y="142" width="280" height="126" rx="18" fill="#fff" stroke="#d8e0ec" stroke-width="2"/>
+    <rect x="54" y="142" width="8" height="126" rx="4" fill="#2458b8"/>
+    <text x="82" y="184" fill="#2458b8" font-size="13" font-weight="700">使用者前台</text>
+    <text x="82" y="219" fill="#17263f" font-size="22" font-weight="700">Vue.js SPA</text>
+    <text x="82" y="245" fill="#65738a" font-size="14">Vite 建置｜預約與個人操作</text>
+
+    <rect x="54" y="326" width="280" height="126" rx="18" fill="#fff" stroke="#d8e0ec" stroke-width="2"/>
+    <rect x="54" y="326" width="8" height="126" rx="4" fill="#f9a52b"/>
+    <text x="82" y="368" fill="#bd7412" font-size="13" font-weight="700">後勤管理</text>
+    <text x="82" y="403" fill="#17263f" font-size="20" font-weight="700">Rails 管理後台</text>
+    <text x="82" y="429" fill="#65738a" font-size="14">預約、派車與服務管理</text>
+
+    <rect x="450" y="202" width="340" height="178" rx="20" fill="#e7eefb" stroke="#b9cbea" stroke-width="2"/>
+    <text x="482" y="244" fill="#2458b8" font-size="13" font-weight="700">應用核心</text>
+    <text x="482" y="282" fill="#17263f" font-size="25" font-weight="700">Ruby on Rails</text>
+    <rect x="482" y="304" width="126" height="34" rx="17" fill="#fff"/>
+    <text x="545" y="326" text-anchor="middle" fill="#42516b" font-size="13">Grape API</text>
+    <rect x="620" y="304" width="138" height="34" rx="17" fill="#fff"/>
+    <text x="689" y="326" text-anchor="middle" fill="#42516b" font-size="13">業務邏輯</text>
+
+    <rect x="890" y="220" width="250" height="140" rx="18" fill="#fff" stroke="#d8e0ec" stroke-width="2"/>
+    <text x="922" y="263" fill="#65738a" font-size="13" font-weight="700">資料儲存</text>
+    <text x="922" y="303" fill="#17263f" font-size="23" font-weight="700">PostgreSQL</text>
+    <text x="922" y="330" fill="#65738a" font-size="14">預約、使用者與調度資料</text>
+
+    <rect x="450" y="430" width="340" height="80" rx="16" fill="#fff" stroke="#d8e0ec" stroke-width="2"/>
+    <text x="480" y="463" fill="#17263f" font-size="18" font-weight="700">LINE Login／通知</text>
+    <text x="480" y="487" fill="#65738a" font-size="13">外部身分驗證與訊息服務</text>
+  </g>
+
+  <path d="M334 205H426" stroke="#2458b8" stroke-width="3" marker-end="url(#arrow)"/>
+  <path d="M334 389C385 389 388 340 426 340" fill="none" stroke="#2458b8" stroke-width="3" marker-end="url(#arrow)"/>
+  <path d="M790 291H870" stroke="#2458b8" stroke-width="3" marker-end="url(#arrow)"/>
+  <path d="M620 380V415" stroke="#8492a8" stroke-width="2.5" marker-start="url(#arrowBoth)" marker-end="url(#arrowBoth)"/>
+</svg>

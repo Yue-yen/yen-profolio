@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./js/support.js"></script>
+<script src="./js/project-reveal.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>國家級賽事後勤預約與調度系統 — YENWEN</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&amp;family=Noto+Sans+TC:wght@400;500;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style/base.css">
+<link rel="stylesheet" href="./style/project.css">
+</helmet>
+
+<div class="page-project">
+
+  <header class="site-header">
+    <a class="site-logo" href="./index.html">
+      <span class="site-logo-text">YENWEN</span>
+      <span class="site-logo-dot"></span>
+    </a>
+    <a class="site-index" href="./index.html">Index</a>
+  </header>
+
+  <div class="case-layout">
+
+    <aside class="case-aside" aria-label="專案資訊">
+      <p class="case-kicker"><span>01</span> Project</p>
+      <h1 class="case-title">國家級賽事後勤預約與調度系統</h1>
+      <dl class="case-meta">
+        <div>
+          <dt>Role</dt>
+          <dd>產品設計／全端開發</dd>
+        </div>
+        <div>
+          <dt>Year</dt>
+          <dd>2025–2026</dd>
+        </div>
+        <div>
+          <dt>Type</dt>
+          <dd>行動優先預約平台／後勤管理系統</dd>
+        </div>
+        <div>
+          <dt>Duration</dt>
+          <dd>一年</dd>
+        </div>
+        <div>
+          <dt>Technologies</dt>
+          <dd>
+            <ul class="case-tags">
+              <li>Vue.js</li>
+              <li>Ruby on Rails</li>
+              <li>Vite</li>
+              <li>JavaScript</li>
+              <li>SCSS</li>
+              <li>Figma</li>
+            </ul>
+          </dd>
+        </div>
+      </dl>
+    </aside>
+
+    <main class="case-main">
+
+      <section class="case-section" aria-labelledby="overview-title">
+        <h2 id="overview-title">Overview</h2>
+        <p>為國家級運動賽事建立後勤預約與調度系統，讓選手與教練透過前台提出服務預約，後勤人員則可在後台管理預約與安排資源。</p>
+        <p>我參與專案兩個階段：第一階段負責需求釐清、流程與介面設計、資料架構討論及前端開發；專案暫停後重啟，第二階段主要負責前後端實作，並配合需求調整流程與整合 LINE Login。</p>
+        <figure class="case-figure">
+          <img class="case-image" src="./img/project01-front-mock.png" alt="以三支手機 mock 展示登入、首頁與預約表單主要介面的去識別化前台示意圖。">
+          <figcaption>前台介面 mock：呈現登入、首頁與預約表單的主要畫面與色彩；細節已模糊或以示意方式重繪。</figcaption>
+        </figure>
+      </section>
+
+      <section class="case-section" aria-labelledby="problem-title">
+        <h2 id="problem-title">專案問題</h2>
+        <p>預約流程包含多個步驟，並需支援手機操作；後台也需協助不同業務人員管理預約與調度。需求來自多位負責不同業務的客戶窗口，內容分散且會變動。</p>
+        <p>專案重啟後，部分原由使用者在前台操作的流程，改為由後台人員代為預約。</p>
+        <figure class="case-figure">
+          <img class="case-image" src="./img/project01-booking-flow.svg" alt="預約流程圖：前台填寫或後台代約，接著確認需求、安排服務，必要時安排派車，最後在預約與必要派車確認後發送通知。">
+          <figcaption>預約入口依階段調整；需要派車的服務，待相關派車確認後再發送通知。</figcaption>
+        </figure>
+      </section>
+
+      <section class="case-section" aria-labelledby="goal-title">
+        <h2 id="goal-title">專案目標</h2>
+        <ul class="case-list">
+          <li>讓選手與教練透過手機完成後勤服務預約。</li>
+          <li>讓後勤人員透過後台管理預約與調度。</li>
+          <li>將不同業務人員提出的需求整理成一致的流程與系統規則。</li>
+          <li>保留調整空間，以因應專案重啟後的流程變動。</li>
+          <li>整合 LINE Login。</li>
+        </ul>
+      </section>
+
+      <section class="case-section" aria-labelledby="work-title">
+        <h2 id="work-title">我的工作與合作方式</h2>
+        <h3>第一階段：需求釐清與前端交付</h3>
+        <p>業務帶回需求後，我持續提問、確認使用情境與規則，直到掌握系統全貌，再整理操作流程、泳道圖和角色權限。接著和團隊討論並對齊資料架構，完成介面設計與前端工程。</p>
+        <figure class="case-figure">
+          <img class="case-image" src="./img/project01-figma-canvas.png" alt="依 Figma 設計畫布重製的 mock 示意圖，可見多組手機介面與流程畫面配置，細節文字已模糊。">
+          <figcaption>Figma 畫布：細節已模糊化。</figcaption>
+        </figure>
+        <h3>第二階段：重啟後的前後端開發</h3>
+        <p>專案暫停一段時間後重啟。我主要負責前後端實作，依客戶後續需求調整預約流程，並整合 LINE Login。</p>
+      </section>
+
+      <section class="case-section" aria-labelledby="decision-title">
+        <h2 id="decision-title">關鍵設計與技術決策</h2>
+        <ul class="case-list">
+          <li>團隊採用 Vue 建置前端，以支援多步驟預約流程；這也是我首次參與 Vue 實務開發，過程中透過文件、實作、測試和資深工程師的架構指導逐步熟悉。</li>
+          <li>以手機操作為主要設計情境，先盤點各步驟需要的資訊與規則，再和 PM 團隊對齊。</li>
+          <li>專案重啟後，依客戶需求調整部分預約流程。</li>
+          <li>整合 LINE Login 作為系統登入方式。</li>
+        </ul>
+        <figure class="case-figure">
+          <img class="case-image" src="./img/project01-architecture.svg" alt="系統架構簡化圖：Vue.js 前台和 Rails 管理後台連接 Rails 應用核心，應用核心使用 PostgreSQL，並整合 LINE Login 與通知。">
+          <figcaption>依專案程式結構整理的簡化架構示意，未呈現實際部署、網址或內部設定。</figcaption>
+        </figure>
+      </section>
+
+      <section class="case-section" aria-labelledby="result-title">
+        <h2 id="result-title">成果</h2>
+        <ul class="case-list">
+          <li>完成前台預約與後台管理系統的階段性交付。</li>
+          <li>專案重啟後依客戶需求調整預約流程。</li>
+          <li>完成 LINE Login 整合。</li>
+        </ul>
+      </section>
+
+      <section class="case-section" aria-labelledby="reflection-title">
+        <h2 id="reflection-title">反思</h2>
+        <p>這個專案讓我從需求釐清、流程與權限設計一路參與到前端實作，並在專案重啟後承接主要的前後端開發。先讓團隊對使用情境、流程和資料架構建立共識，能讓後續設計與開發更有依據；作業方式改變時，也能以已整理的流程和系統結構為基礎，判斷需要調整的部分。</p>
+      </section>
+
+      <nav class="case-next" aria-label="下一篇">
+        <a class="case-next-link" href="./project-02.html">
+          <span class="case-next-kicker">Next</span>
+          <span class="case-next-title">SaaS 後台管理系統重構</span>
+        </a>
+      </nav>
+
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-meta">
+      <span>© 2026 YENWEN</span>
+      <div class="footer-links">
+        <a href="#" hidden="hidden">LinkedIn</a>
+        <a href="mailto:serena8329@gmail.com">Mail</a>
+      </div>
+    </div>
+    <div class="footer-brand-wrap">
+      <div class="footer-brand">YENWEN<span class="footer-brand-dot"></span></div>
+    </div>
+  </footer>
+
+</div>
+</x-dc>
+</body>
+</html>

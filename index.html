@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./js/support.js"></script>
+</head>
+<body>
+<x-dc>
+    10|<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&amp;family=Noto+Sans+TC:wght@400;500;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style/base.css">
+<link rel="stylesheet" href="./style/index.css">
+<script src="./js/image-slot.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+</helmet>
+
+<div class="page-index">
+
+  <header class="site-header">
+    <div class="site-logo">
+      <span class="site-logo-text">YENWEN</span>
+      <span class="site-logo-dot"></span>
+    </div>
+  </header>
+
+  <section class="intro">
+    <div class="gooey-bg" aria-hidden="true">
+      <div class="gooey-layer" style="filter: url('#goo')">
+        <div class="gooey-circle">
+          <div class="gooey-bar"></div>
+          <div class="gooey-bar"></div>
+          <div class="gooey-bar"></div>
+          <div class="gooey-bar"></div>
+          <div class="gooey-bar"></div>
+          <div class="gooey-bar"></div>
+          <div class="gooey-bar"></div>
+          <div class="gooey-bar"></div>
+          <div class="gooey-bar"></div>
+          <div class="gooey-bar"></div>
+          <div class="gooey-bar"></div>
+          <div class="gooey-bar"></div>
+          <div class="gooey-bar"></div>
+          <div class="gooey-bar"></div>
+          <div class="gooey-bar"></div>
+          <div class="gooey-bar"></div>
+          <div class="gooey-bar"></div>
+          <div class="gooey-bar"></div>
+          <div class="gooey-bar"></div>
+          <div class="gooey-bar"></div>
+          <div class="gooey-bar"></div>
+          <div class="gooey-bar"></div>
+          <div class="gooey-bar"></div>
+        </div>
+      </div>
+    </div>
+    <div class="gooey-bg gooey-bg--cross" aria-hidden="true">
+      <div class="gooey-layer" style="filter: url('#goo')">
+        <div class="gooey-cross">
+          <div class="gooey-bar"></div>
+          <div class="gooey-bar"></div>
+          <div class="gooey-bar"></div>
+          <div class="gooey-bar"></div>
+        </div>
+      </div>
+    </div>
+    <svg class="gooey-svg" xmlns="http://www.w3.org/2000/svg" version="1.1" aria-hidden="true">
+      <defs>
+        <filter id="goo" x="-50%" y="-50%" width="200%" height="200%">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="7" result="blur" />
+          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+          <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+        </filter>
+      </defs>
+    </svg>
+    <div class="intro-copy">
+      <h1 class="intro-title">Designing &amp; Building<br><span>Digital Products</span></h1>
+    </div>
+    <div class="intro-bottom">
+      <ul class="intro-stats">
+        <li><span>6+</span> Years Remote Work Experience</li>
+      </ul>
+      <button type="button" class="scroll-hint">
+        SCROLL
+        <span class="scroll-hint-track">
+          <span class="scroll-hint-bar"></span>
+        </span>
+      </button>
+    </div>
+  </section>
+
+  <section class="profile" aria-labelledby="profile-title">
+    <h2 id="profile-title" class="profile-title">About</h2>
+    <div class="profile-body">
+      <h3 class="profile-subtitle">Yen-Wen Lin 林妍彣</h3>
+      <p class="profile-lead">能從設計發想一路參與到實作交付，工作涵蓋需求釐清、介面設計、前端與 Ruby on Rails 開發。也有帶領團隊的經驗，能與不同職能合作，協助專案往前推進。</p>
+      <p class="profile-career">經歷｜2020–至今於同一家公司，從 UI/UX 與前端切版，逐步延伸至設計團隊帶領、Rails 開發與新案評估。</p>
+      <ul class="profile-skills">
+        <li>Figma</li>
+        <li>HTML</li>
+        <li>SCSS</li>
+        <li>JavaScript</li>
+        <li>Vue.js</li>
+        <li>Ruby on Rails</li>
+        <li>Vite</li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="stack-track" ref="{{ trackRef }}">
+
+    <article class="stack-card stack-card--1" id="project-1">
+      <div class="stack-inner">
+        <div class="stack-index">
+          <h2>Project</h2>
+          <span class="stack-index-rule"></span>
+          <div class="stack-num">
+            <span class="stack-num-bar" aria-hidden="true"></span>
+            <span class="stack-num-value">01</span>
+          </div>
+        </div>
+        <div class="stack-frame">
+          <div class="stack-mask">
+            <image-slot class="stack-image" id="stack-card-1" shape="rect" src="./img/project01-index-cover.png" placeholder="Project 01 preview"></image-slot>
+          </div>
+        </div>
+        <div class="stack-copy">
+          <h3>國家級賽事後勤預約與調度系統</h3>
+          <a href="./project-01.html" class="fx b32 stack-viewmore"><span>View More</span></a>
+          <p>先透過反覆訪談釐清多方需求，整理預約流程、泳道圖與角色權限，並和團隊對齊資料架構。第一階段負責產品流程、UI/UX 與前端開發；專案暫停後重啟，第二階段主要由我負責前後端實作，配合需求調整並完成 LINE Login 整合。</p>
+          <ul class="stack-tags">
+            <li>Ruby on Rails</li>
+            <li>Vue.js</li>
+            <li>Vite</li>
+            <li>LINE Login</li>
+            <li>UI/UX Design</li>
+            <li>Figma</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+    <article class="stack-card stack-card--2">
+      <div class="stack-inner">
+        <div class="stack-index">
+          <h2>Project</h2>
+          <span class="stack-index-rule"></span>
+          <div class="stack-num">
+            <span class="stack-num-bar" aria-hidden="true"></span>
+            <span class="stack-num-value">02</span>
+          </div>
+        </div>
+        <div class="stack-frame">
+          <div class="stack-mask">
+          <image-slot class="stack-image" id="stack-card-2" shape="rect" src="./img/project-2-index.jpg" placeholder="Project 02 preview"></image-slot>
+          </div>
+        </div>
+        <div class="stack-copy">
+          <h3>通用型 SaaS 後台管理系統重構</h3>
+          <a href="./project-02.html" class="fx b32 stack-viewmore"><span>View More</span></a>
+          <p>當時參與後台重構與 Rails 7、Vite 升級，並設計、實作共用 SCSS 編譯流程，讓 TinyMCE 套用與前台一致的內容樣式。自 2025 年起，這套共用基底用於公司新客製化專案。</p>
+          <ul class="stack-tags">
+            <li>Ruby on Rails 7</li>
+            <li>Vite</li>
+            <li>TinyMCE SCSS Pipeline</li>
+            <li>Figma</li>
+            <li>UI/UX Design</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+    <article class="stack-card stack-card--3">
+      <div class="stack-inner">
+        <div class="stack-index">
+          <h2>Project</h2>
+          <span class="stack-index-rule"></span>
+          <div class="stack-num">
+            <span class="stack-num-bar" aria-hidden="true"></span>
+            <span class="stack-num-value">03</span>
+          </div>
+        </div>
+        <div class="stack-frame">
+          <div class="stack-mask">
+            <image-slot class="stack-image" id="stack-card-3" shape="rect" src="./img/project03-index-cover.png" placeholder="Project 03 preview"></image-slot>
+          </div>
+        </div>
+        <div class="stack-copy">
+          <h3>大型多語系企業官網重設計</h3>
+          <a href="./project-03.html" class="fx b32 stack-viewmore"><span>View More</span></a>
+          <p>為大型多語系企業官網規劃內容管理體驗。我負責 UI/UX 設計與前端切版，沿用公司共用編輯器，依大量靜態頁面的需求設計專用模板，並協助釐清內容審核流程。</p>
+          <ul class="stack-tags">
+            <li>Figma</li>
+            <li>HTML</li>
+            <li>SCSS</li>
+            <li>JavaScript</li>
+            <li>Ruby on Rails</li>
+            <li>Vite</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-meta">
+      <span>© 2026 YENWEN</span>
+      <div class="footer-links">
+        <a href="#" hidden="hidden">LinkedIn</a>
+        <a href="mailto:serena8329@gmail.com">Mail</a>
+      </div>
+    </div>
+    <div class="footer-brand-wrap">
+      <div class="footer-brand">YENWEN<span class="footer-brand-dot"></span></div>
+    </div>
+  </footer>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;revealIntensity&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:1,&quot;min&quot;:0,&quot;max&quot;:1,&quot;step&quot;:0.05,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Stack motion&quot;},&quot;revealFrom&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;bottom&quot;,&quot;top&quot;,&quot;center&quot;],&quot;default&quot;:&quot;bottom&quot;,&quot;tsType&quot;:&quot;\&quot;bottom\&quot; | \&quot;top\&quot; | \&quot;center\&quot;&quot;,&quot;section&quot;:&quot;Stack motion&quot;},&quot;dimCovered&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Stack motion&quot;},&quot;smoothScroll&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Stack motion&quot;}}">
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.track = React.createRef();
+    this.onScroll = this.onScroll.bind(this);
+    this.onScrollHint = this.onScrollHint.bind(this);
+  }
+
+  componentDidMount() {
+    this.smooth = new Map(); // per-card damped values, so motion keeps easing after scroll stops
+    this.token = (this.token || 0) + 1;
+    this.startLoop();
+    this.startLenis();
+    // fallbacks so the reveal never depends on a single driver
+    window.addEventListener('scroll', this.onScroll, { passive: true });
+    window.addEventListener('resize', this.onScroll);
+    const hint = document.querySelector('.page-index .scroll-hint');
+    if (hint) hint.addEventListener('click', this.onScrollHint);
+  }
+
+  // one rAF chain, owned by a token: a remount invalidates the old chain instead of killing the new one
+  startLoop() {
+    const mine = this.token;
+    this.pending = true;
+    const loop = () => {
+      if (this.token !== mine) { this.pending = false; return; }
+      this.update();
+      requestAnimationFrame(loop);
+    };
+    requestAnimationFrame(loop);
+  }
+
+  startLenis(tries) {
+    if (this.props.smoothScroll === false) return;
+    if (typeof window.Lenis !== 'function') {
+      if ((tries || 0) < 60) setTimeout(() => this.startLenis((tries || 0) + 1), 50);
+      return;
+    }
+    this.lenis = new window.Lenis({
+      duration: 1.15,
+      lerp: null,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      smoothWheel: true,
+      touchMultiplier: 1.6,
+    });
+    this.lenis.on('scroll', this.onScroll);
+    const mine = this.token;
+    const raf = (time) => {
+      if (this.token !== mine || !this.lenis) return;
+      this.lenis.raf(time);
+      requestAnimationFrame(raf);
+    };
+    requestAnimationFrame(raf);
+  }
+
+  componentWillUnmount() {
+    this.token = (this.token || 0) + 1; // invalidates any chain this instance owns
+    window.removeEventListener('scroll', this.onScroll);
+    window.removeEventListener('resize', this.onScroll);
+    const hint = document.querySelector('.page-index .scroll-hint');
+    if (hint) hint.removeEventListener('click', this.onScrollHint);
+    if (this.lenis) { this.lenis.destroy(); this.lenis = null; }
+  }
+
+  onScrollHint(e) {
+    e.preventDefault();
+    const card = document.getElementById('project-1');
+    if (!card) return;
+    if (this.lenis) this.lenis.scrollTo(card, { offset: 0 });
+    else card.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  onScroll() {
+    if (!this.pending) { this.token = (this.token || 0) + 1; this.startLoop(); }
+    this.update();
+  }
+
+  damp(key, target) {
+    const prev = this.smooth.has(key) ? this.smooth.get(key) : target;
+    let v = prev + (target - prev) * 0.18;
+    if (Math.abs(target - v) < 0.002) v = target; // snap, so a pinned card always reaches fully open
+    this.smooth.set(key, v);
+    return v;
+  }
+
+  update() {
+    const track = this.track.current;
+    if (!track) return;
+    const cards = Array.from(track.children);
+    const vh = window.innerHeight || 1;
+    const clamp = (v) => (v < 0 ? 0 : v > 1 ? 1 : v);
+    const ease = (t) => 1 - Math.pow(1 - t, 3);
+    const lerp = (a, b, t) => a + (b - a) * t;
+    const startScale = 1 - 0.82 * (this.props.revealIntensity ?? 1);
+    const dim = this.props.dimCovered ?? true;
+
+    cards.forEach((card, i) => {
+      const raw = clamp(1 - card.getBoundingClientRect().top / vh);
+      // smoothstep, not ease-out: the mask stays visibly closed through most of the entry
+      const enter = this.damp('e' + i, raw * raw * (3 - 2 * raw));
+      const next = cards[i + 1];
+      const covered = this.damp('c' + i, next ? ease(clamp(1 - next.getBoundingClientRect().top / vh)) : 0);
+
+      const mask = card.querySelector('.stack-mask');
+      if (mask) {
+        const p = i === 0 ? 1 : enter;
+        const hidden = (1 - lerp(startScale, 1, p)) * 100; // % of the frame still masked
+        const from = this.props.revealFrom || 'bottom';
+        let clip;
+        if (from === 'top') clip = 'inset(0 0 ' + hidden.toFixed(2) + '% 0)';
+        else if (from === 'center') clip = 'inset(' + (hidden / 2).toFixed(2) + '% 0 ' + (hidden / 2).toFixed(2) + '% 0)';
+        else clip = 'inset(' + hidden.toFixed(2) + '% 0 0 0)';
+        mask.style.clipPath = clip;
+        const img = mask.firstElementChild;
+        if (img) img.style.transform = 'scale(' + lerp(1.12, 1, p).toFixed(4) + ')';
+      }
+
+      const inner = card.querySelector('.stack-inner');
+      if (inner) {
+        inner.style.transform = 'scale(' + (1 - 0.05 * covered).toFixed(4) + ')';
+        inner.style.opacity = dim ? (1 - 0.55 * covered).toFixed(3) : '1';
+        inner.style.filter = dim ? 'brightness(' + (1 - 0.15 * covered).toFixed(3) + ')' : 'none';
+      }
+    });
+  }
+
+  renderVals() {
+    return { trackRef: this.track };
+  }
+}
+
+</script>
+</body>
+</html>
